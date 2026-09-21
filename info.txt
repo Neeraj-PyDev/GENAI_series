@@ -1,0 +1,27 @@
+1>Create a dot env file under folder, and put all APIs key of LLMs.
+2>Create a virtual env as well.
+3>Why Langchain needed? -- Suppose we building GenAI appl and need multi model LLMs like from OpenAI,
+Claude, Gemini etc.. so every LLMs API work differently and syntax also diff.So Langchain framework
+unites all at a place and easy to deliver tasks.
+4>To activate venv -- python -m venv env {to create}
+                    . env/bin/activate {to activate}
+5>docs.langchain.com - powerful page with max information.
+
+6>LangChain organizes components into these main categories:	
+    Models	
+    Tools	
+    Agents	
+    Memory	
+    Retrievers	
+    Document processing	
+    Vector Stores	
+
+7>Git Commands to add these files.
+    - git remote add origin https://github.com/Neeraj-PyDev/GENAI_series.git
+    - git remote -v
+    - git status
+    - git pull -u origin main
+    - git add .
+    - git status
+    - git commit -m "adding genai files"
+    - git push -u origin main

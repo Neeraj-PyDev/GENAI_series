@@ -25,3 +25,42 @@ unites all at a place and easy to deliver tasks.
     - git status
     - git commit -m "adding genai files"
     - git push -u origin main
+
+
+8>After start using StreamLit, we need not require to run using python <filename.py>.
+    Now we need to use streamlit run <filename.py>.
+    
+9>Structured_output - used for dictonary key value pair output from llm.
+
+10>Ollama - Ollama is open-source models used for integrating into application totally free.
+    So download it from ollama.com and install locally.
+
+11>Groq is the hardware and software company which made chips to run LLm fatser .
+
+12>**AGENTS** is build up of 3 things:= **Prompts + 
+                                    **LLM (ReAct Reasoning+Action) + 
+                                    **Tools (python functions).
+As suppose if someuser asks a qsn and if LLM thinks it not answers by self then it
+think of asking python funcs (TOOLS), which tools to approach, then also answers which tools 
+revert back is correct or not.If not then again same. (in Loop).
+
+13>for memory during chat with agents, add checkpointer/MemorySaver while creating agent
+ & add configurable:thread=1/anything under agent.invoke. This anything will actually create
+ a session and memorize past chats only specific to that thread id.
+
+14>creating TaskManager Agent with sqlite DB, need to install extension in VSCode,SQLITE DB VIEWER.
+
+15>RAG- Retrieval Augmented Generation - Load->Chunks->Embeddings->Store->SimilaritySearch
+
+16>Vector Embeddings- Relationships between words.And perform cosine angles.
+    Vectorization: The model encodes each input string as a high-dimensional vector.
+    Similarity scoring: Vectors are compared using mathematical metrics to measure how closely related the underlying texts are.
+17>Similarity Metrics - Several Metrics commonly used to compare embeddings.:
+    1>Cosine Similarity 2>Euclidean distnace 3>Dot Product
+18>For chat system we use model under OpenAI etc..
+    But for embeddings we use embeddings Model inside OpenAI etc..
+19>Top Integrations for Embeddings:
+    OpenAI,Ollama,Azure,Gemini,HuggingFace,Mistral AI,Nvidida,IBM,xAI,Deepseek ....
+20>Top Integrations for Vector Store:
+    Chroma,FSAII,AmazonOpenSearch,Milvus,Cockroach,Pinecone,Qdrant ...
+    And to use Chroma (suppose) , then we need to install packages. Like Langchain_chroma.
